@@ -11,3 +11,53 @@ html,body{
     width: 100%;
 }
 
+@font-face {
+    font-family: 'Futura';
+    src: url('./fonts/Futura-Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#page1{
+    min-height: 100vh;
+    background-color: aquamarine;
+    width: 100%;
+    position: relative;
+    padding: 0 1vw;
+    padding-top: 20vh;
+}
+
+#page1 h1{
+    font-size: 15.8vw;
+    text-transform: uppercase;
+    font-family: futura;
+    line-height:14vw;
+    letter-spacing: -8px;
+}
+
+#video-container{
+    height: 100vh;
+    width: 100%;
+    background-color: gray;
+    margin-top: 1vw;
+    position: relative;
+}
+
+#video-container video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+#video-container #play{
+    padding: 3vw 2.3vw;
+    background-color: black;
+    font-size: 1.3vw;
+    color: #fff;
+    position: fixed;
+    text-transform: uppercase;
+    font-family: futura;
+    border-radius: 50%;
+    opacity: 0;
+    scale: 0;
+}
