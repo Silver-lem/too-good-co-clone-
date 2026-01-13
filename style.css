@@ -11,9 +11,83 @@
     background-color: black;
 }
 
+h1{
+    font-weight: 100;
+}
 html,body{
     height: 100%;
     width: 100%;
+    background-color: #F7F7F7;
+}
+
+#nav {
+    /* height: 100px; */
+    width: 100%;
+    /* background-color: burlywood; */
+    position: fixed;
+    z-index: 99;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 25px;
+}
+
+#nav #nav-part2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+#links {
+    padding: 10px;
+}
+
+#links #num:hover{
+    text-decoration: underline;
+    color: grey;
+}
+
+#nav-part1 {
+    /* background-color: RED; */
+    height: 82px;
+    overflow: hidden;
+}
+
+#nav-part1 svg {
+    display: block;
+}
+
+#nav-part2 #links a {
+    text-transform: uppercase;
+
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 14px;
+    margin: 0 20px;
+}
+
+#icons {
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #F7F7F7;
+}
+
+#nav-part2 #icons i {
+    font-size: 18px;
+    margin: 0 20px;
+    font-weight: 100;
+}
+
+#cursor {
+    height: 275px;
+    width: 275px;
+    background-color: white;
+    border-radius: 50%;
+    position: fixed;
+    transform: translate(-50%, -50%) scale(0);
+
 }
 
 @font-face {
@@ -43,7 +117,7 @@ html,body{
 #video-container{
     height: 100vh;
     width: 100%;
-    background-color: gray;
+    background-color: grey;
     margin-top: 1vw;
     position: relative;
 }
@@ -95,23 +169,34 @@ html,body{
     width: 100%;
     object-fit: cover;
     scale: 1.1;
-    position: relative;
+    /* position: relative; */
 }
 
-.elem .dets{
+#page2 .elem .dets{
     height: 35px;
     border-radius: 50px;
-    width: 70%;
+    width: 75%;
     position: absolute;
-    /* z-index : 9;
-    top:50%;
-    left:50%; */
+     z-index : 9;
+    /* top:50%;
+    left:50%;  */
     /* transform: translate(-50%,-50%); */
-    background-color: rgb(226, 168, 43);
+    /* background-color: #744F4D; */
+
+    background: #744F4D;
+    padding: 0 32px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 12px;
+    letter-spacing: 0.06em;
+    line-height: .9em;
 
 }
 
-.elem .dets.dets:hover{
+.elem .dets:hover{
     height: 200px;
 }
 
@@ -119,7 +204,7 @@ html,body{
 #page3{
     min-height: 120vh;
     width: 100%;
-    background-color: #F7F7F7;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -129,8 +214,16 @@ html,body{
 .child{
     height: 55vh;
     width: 40vw;
-    background-color: aquamarine;
-    border: 2px solid black;
+    /* background-color: aquamarine; */
+    /* border: 2px solid black; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.child img{
+    height: 100%;
 }
 
 @media (max-width:600px){
