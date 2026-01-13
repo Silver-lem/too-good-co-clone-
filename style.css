@@ -95,6 +95,42 @@ html,body{
     width: 100%;
     object-fit: cover;
     scale: 1.1;
+    position: relative;
+}
+
+.elem .dets{
+    height: 35px;
+    border-radius: 50px;
+    width: 70%;
+    position: absolute;
+    /* z-index : 9;
+    top:50%;
+    left:50%; */
+    /* transform: translate(-50%,-50%); */
+    background-color: rgb(226, 168, 43);
+
+}
+
+.elem .dets.dets:hover{
+    height: 200px;
+}
+
+
+#page3{
+    min-height: 120vh;
+    width: 100%;
+    background-color: #F7F7F7;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.child{
+    height: 55vh;
+    width: 40vw;
+    background-color: aquamarine;
+    border: 2px solid black;
 }
 
 @media (max-width:600px){
